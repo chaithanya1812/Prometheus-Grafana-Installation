@@ -1,4 +1,6 @@
 # Prometheus & Grafana-Installation
+![promdee](https://user-images.githubusercontent.com/111736742/229623840-7bf435e4-d851-4273-8402-97e34e9754f2.jpg)
+# ---------------------------------------------------------------
 ![architecture](https://user-images.githubusercontent.com/111736742/229615136-8b17b01b-9695-4133-98ab-46b95029ba6c.png)
 
 #1)----Prometheus Installation
@@ -77,7 +79,7 @@ step2- Add below data
     static_configs:
       - targets: ["3.110.133.111:9100"]
 ```
- #if you add another node-exporter same you have repeat!!!
+ #if you want to add another node-exporter same you have repeat!!!
  ```bash
 - job_name: "node-2"
 
@@ -87,7 +89,7 @@ step2- Add below data
     static_configs:
       - targets: ["13.233.32.106:9100"]
 ```
-# After adding node-exporters details how its look in (prometheus.yml) file.
+# After adding node-exporters details how its looks like this in (prometheus.yml) file.
 ![final image](https://user-images.githubusercontent.com/111736742/229617028-a8bf0d07-7e1f-4bc9-973b-83a2d4f90149.png)
 # Next  go to prometheus dashboard under Status section select Targets you can see our 2-node exporters details
 ![prometheusfinal status](https://user-images.githubusercontent.com/111736742/229618621-a182771f-2f8a-4ac9-84c8-ae52a2fe29d6.png)
